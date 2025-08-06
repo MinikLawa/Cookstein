@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bnuixcxiws5wn"]
+[gd_scene load_steps=5 format=3 uid="uid://bnuixcxiws5wn"]
 
 [ext_resource type="Script" uid="uid://bcjna465ppwlk" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="PackedScene" uid="uid://bbqbihnyyersq" path="res://scenes/ui.tscn" id="2_g2els"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_u8vuu"]
 
@@ -19,3 +20,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62735, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03119, 0)
 shape = SubResource("CapsuleShape3D_3vyb7")
+
+[node name="UI" parent="." instance=ExtResource("2_g2els")]
